@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+.contentInc {
+
+  height: 100%;
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  background: linear-gradient(to left, #c0c1f1 40%, #bcbdfc 50%, #E9E9F9 65%);
+  font-family: "Quicksand";
+  
+}
+.containerInc {
+
+width: 1500px;
+height: 800px;
+display: flex;
+justify-content: center; 
+align-items: center;
+flex-direction: row-reverse;
+}
+
+.incidentStyle {
+  width: 750px;
+  height: 450px;
+  margin: 0 auto;
+  text-align: center;
+  margin-left: 500px;
+  
+}
+.incidentStyle label {
+  text-align: left;
+  
+  
+}
+.incidentStyle h2 {
+  font-size: 20px;
+  color: #0004ff;
+  margin-bottom: 30px;
+}
+.incidentStyle input, .incidentStyle textarea, .incidentStyle select {
+  width: 100%;
+  padding: 6px 10px;
+  margin: 10px 0;
+  padding: 3px 10px;
+  border: #7879F1 2px solid;
+  border-radius: 15px;
+  box-sizing: border-box;
+  
+}
+.incidentStyle button {
+  background: #F9E9E3;
+  color: #7879F1;
+  border: #7879F1 2px solid;
+  padding: 8px;
+  border-radius: 8px ;
+  cursor: pointer;
+  margin-top: 100px;
+  font-family: "Quicksand";
+  width: 200px;
+}
+
+.titleInc {
+
+height: 50px;
+width: 250px;
+margin: 0 auto;
+text-align: center;
+}
+.incidents {
+
+  min-height: 200px;
+  max-width: 600px;
+}
+.incidentsBox {
+
+border: 1px solid ;
+border-radius: 8px;
+}
+.descInc {
+
+  height: 150px;
+  width: 750px;
+  margin: 0 auto;
+  text-align: center;
+  }
+

@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,800&display=swap');
+ 
+ body{
+    margin: 0;
+    padding: 0;
+} 
+
+.container {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 80vh;
+}
+
+.block-left {
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    justify-content: space-between;
+    height: 100%;;
+    width: 25%;
+}
+
+.hola-presidente{
+    margin: 20px 20px;
+    font-family: 'Raleway', sans-serif;
+    color: #6969e9;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.icon-house{
+    font-size: 150px;
+}
+
+.block-mid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vh;
+    height: 100%;;
+    width: 50%;
+    padding: 20px 0 20px 0;
+}
+
+.user-icon{
+    font-size: 150px;
+}
+
+.middle-paragraph{
+    font-family: 'Raleway', sans-serif;
+    color: #6969e9;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+.invitation-container{
+    width: 580px;
+    height: 25px;
+    font-family: 'Raleway', sans-serif;
+    color: #6969e9;
+    font-weight: bolder;
+    background-color: white;
+    font-size: 15px;
+    border-radius: 20px;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.button-join-community{
+    font-family: 'Raleway', sans-serif;
+    color: #6969e9;
+    font-size: 15px;
+    font-weight: bolder;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    padding: 5px 10px 5px 10px;
+    
+}
+
+.block-right{
+    height: 100%;;
+    width: 25%;
+}

@@ -1,0 +1,11 @@
+body{
+  background: linear-gradient(to left, #A5A6F6 40%, #bcbdfc 50%, #E9E9F9 65%);
+  margin: 0;
+}
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
