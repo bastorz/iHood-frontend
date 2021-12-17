@@ -7,19 +7,16 @@ import Login from './components/Login/Login'
 import { EnterInvitation } from './components/EnterInvitation/EnterInvitation'
 import CreateIncidents from './components/Incidents/CreateIncidents'
 import CreateNotification from './components/Notifications/CreateNotification'
-import SignUp from './components/SignUp/Signup'
+import Navbar from '../src/components/Navbar/Navbar';
+import {SignUp} from './components/SignUp/Signup'
 
 function App() {
   return (
     <Router>
-
+          <Navbar />
       <Routes>
  
         <Route path="/" element={<HomeLog />}> 
-          
-        </Route>
-
-        <Route path="/sign-up" element={<SignUp onSignup={undefined} onGoHomeLog={undefined} />}> 
           
         </Route>
 
@@ -32,7 +29,7 @@ function App() {
         </Route>
 
         <Route path="/create-incidents" element={<CreateIncidents />}> 
-          
+      
         </Route>
 
         <Route path="/create-notification" element={<CreateNotification />}> 
@@ -42,6 +39,12 @@ function App() {
         <Route path="/generate-invitation" element={<Invite />}> 
           
         </Route> 
+        
+        <Route path="/sign-up" element={<SignUp/>}> 
+          
+        </Route> 
+        
+        
 
       </Routes>
       

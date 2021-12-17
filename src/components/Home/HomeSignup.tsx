@@ -1,7 +1,6 @@
 import styles from './css/Home.module.css';
 import { Icon } from '@iconify/react';
 import TextCarousel from './TextCarousel';
-import SignUp from '../SignUp/Signup';
 
 export const HomeSignup = ({ onSignup, onGoHomeLog }) => {
 return (
@@ -23,7 +22,6 @@ return (
             <div className={styles.decoLine5}></div>
         </div>
         <div className={styles.signinContainer}>
-            <SignUp onSignup={onSignup} onGoHomeLog={onGoHomeLog}/>
         </div>
     </div>
     
