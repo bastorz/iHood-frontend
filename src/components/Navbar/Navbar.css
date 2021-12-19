@@ -1,0 +1,53 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    font-family: "Quicksand";
+}
+.navbar{
+    display:flex;
+    justify-content: space-between;
+    width: 100vw;
+    height:50%;
+    flex-direction: row;
+    margin:0;
+    
+
+}
+
+.block-left-nav{
+    display: flex;
+    height: 60px;
+    width: 250px;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+}
+
+.iconhouse{
+    font-size: 50px;
+    margin-left: 30px;
+}
+
+.ihood-title{
+    margin-left: 30px;
+    font-size: 30px;
+    color: blue;
+}
+
+.block-right-nav{
+    height:60px;
+    width: 1500px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+ .links{
+    font-size: 15px;
+    color:black;
+    margin-right: 100px;
+    }

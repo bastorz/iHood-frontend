@@ -14,8 +14,6 @@ export const EnterInvitation = () => {
         console.log("hola", invitationCode);
     }
 
-
-
     return  <div className="container">
                 <div className="block-left">
                     <p className="hola-presidente">¡Hola, vecino!</p>

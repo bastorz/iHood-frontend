@@ -13,11 +13,10 @@ export const CommunityService = {
     }, */
 
      claimTenantInvitation: (id: string) => {
-        return RequestManager.post(withBase(`/communities/invite`), {})
+        return RequestManager.post(withBase(`/communities/generate-invitation`), {})
     },
 
     sendInvitationCode: (code: string) => {
-        return RequestManager.post(withBase(`/check-invitation`), {})
-    }
- 
+        return RequestManager.post(withBase(`/communities/generate-invitation`), {})
+    },
 }
