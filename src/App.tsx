@@ -11,12 +11,14 @@ import {SignUp} from './components/SignUp/Signup';
 /* import {Payment} from './components/Payment/Payment'; */
 import {Footer} from './components/Footer/Footer';
 
+
 function App() {
   return (
     <Router>
 
     <Navbar />
           
+          <Navbar />
       <Routes>
  
         <Route path="/" element={<SignIn />}> 
@@ -47,6 +49,8 @@ function App() {
           
         </Route> 
         
+        
+
       </Routes>
 
       <Footer/>
