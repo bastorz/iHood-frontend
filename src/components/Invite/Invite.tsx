@@ -28,9 +28,9 @@ export const Invite = () => {
                     <Button className={styles.buttonGenerateInvitation} variant="blue" >Editar perfil</Button>
                     <p className={styles.middleParagraph}>¿Has añadido ya a todos los miembros de tu comunidad?</p>
                     <p className={styles.middleParagraph}>¡Genera una nueva invitación aquí!</p>
-                    <Button className={styles.buttonGenerateInvitation} variant="blue" onClick={showInvitation}>Genera un código de invitación</Button>
+                    <input type="button" className={styles.buttonGenerateInvitation} onClick={showInvitation} value="generar codigo"></input>
                     <div className={styles.invitationContainer}>
-                        <a href={code} target="_blank" rel="noreferrer"><p>{code}</p></a>
+                        <input type="text" value={code}></input>
                     </div>
                     
                     

@@ -14,17 +14,17 @@
     background: linear-gradient(to left, #c0c1f1 40%, #bcbdfc 50%, #E9E9F9 65%);
     font-family: "Quicksand";
 }
-.block-right{
+.blockRight{
     height:100%;
-    width: 60%;
-    
+    width: 50%;
+    border: 1px solid red;
     display:flex;
     flex-direction:column;
     justify-content: center;
     align-items: center;
 }
 
-.MainContainer {
+.mainContainer {
     width: 1000px;
     height: 450px;
     margin: 0 auto;
@@ -77,24 +77,36 @@
     max-width: 600px;
 }
 
+.blockLeftContainer{
+    height: 600px;
+    width: 500px;
+    border: 1px solid grey;
+    background-color: grey;
+}
 
-.block-left{
+
+.blockLeft{
     height:100%;
-    width: 40%;
+    width: 50%;
     display:flex;
     flex-direction: column;
+    border: 1px solid blue;
+    background: rgb(215, 239, 248);
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .casa{
     font-size: 180px;
 }
 
-.block-left-bottom{
+.blockLeftBottom{
     width:100%;
     height: 20%;
 }
 
-.block-left-top{
+.blockLeftTop{
     width:100%;
     height: 80%;
     display:flex;
@@ -105,10 +117,11 @@
 }
 
 .Contenedores{
-    border: #7879F1 1px solid;
+    border: #7879F1 3px solid;
     border-radius: 8px ;
     width: 450px;
     background-color:white;
+    margin-bottom: 50px;
 }
 
 .bell{

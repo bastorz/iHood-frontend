@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Invite } from './components/Invite/Invite'
 import Login from './components/login/login'
 import { EnterInvitation } from './components/EnterInvitation/EnterInvitation'
-import CreateIncidents from './components/Incidents/CreateIncidents'
+import {CreateIncidents} from './components/Incidents/CreateIncidents'
 import { CreateNotification } from './components/Notifications/CreateNotification'
 import {Navbar} from './components/Navbar/Navbar';
 import {SignUp} from './components/registro/registro';

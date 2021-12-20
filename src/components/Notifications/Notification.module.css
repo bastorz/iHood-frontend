@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    font-family: "Quicksand";
+}
+.container {
+    margin:0;
+    padding:0;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    background: linear-gradient(to left, #c0c1f1 40%, #bcbdfc 50%, #E9E9F9 65%);
+    font-family: "Quicksand";
+}
+.blockRight{
+    height:100%;
+    width: 50%;
+    border: 1px solid red;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainContainer {
+    width: 1000px;
+    height: 450px;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    flex-direction:column;
+}
+
+.MainContainer h2 {
+    font-size: 20px;
+    color: #0004ff;
+    margin-bottom: 30px;
+}
+.MainContainer input, .MainContainer textarea, .MainContainer select {
+    width: 100%;
+    padding: 6px 10px;
+    margin: 10px 0;
+    padding: 3px 10px;
+    border: #7879F1 2px solid;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+.MainContainer button {
+    background: #F9E9E3;
+    color: #7879F1;
+    border: #7879F1 2px solid;
+    padding: 8px;
+    border-radius: 8px ;
+    cursor: pointer;
+    margin-top: 100px;
+    font-family: "Quicksand";
+    width: 200px;
+}
+    
+.titleNot {
+    height: 50px;
+    width: 450px; 
+    margin: 0 auto;
+    text-align: center;
+}
+
+.descNot {
+    height: 150px;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+.notification {
+    min-height: 200px;
+    max-width: 600px;
+}
+
+.blockLeftContainer{
+    height: 600px;
+    width: 500px;
+    border: 1px solid grey;
+    background-color: grey;
+}
+
+
+.blockLeft{
+    height:100%;
+    width: 50%;
+    display:flex;
+    flex-direction: column;
+    border: 1px solid blue;
+    background: rgb(215, 239, 248);
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.casa{
+    font-size: 180px;
+}
+
+.blockLeftBottom{
+    width:100%;
+    height: 20%;
+}
+
+.blockLeftTop{
+    width:100%;
+    height: 80%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+.Contenedores{
+    border: #7879F1 3px solid;
+    border-radius: 8px ;
+    width: 450px;
+    background-color:white;
+    margin-bottom: 50px;
+}
+
+.bell{
+    font-size:24px;
+    margin-left: 440px;
+}
