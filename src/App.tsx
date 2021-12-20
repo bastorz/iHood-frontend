@@ -15,6 +15,8 @@ import {Myaccount} from './components/Myaccount/MyAccount';
 import {MainContextProvider} from './components/context/Main.context'
 import {ChooseRol} from './components/ChooseRol/ChooseRol';
 import {CreateCommunity} from './components/CreateCommunity/CreateCommunity';
+import {UserProfile} from './components/UserProfile/UserProfile';
+import {MasterProfile} from './components/MasterProfile/MasterProfile'
 
 
 function App() {
@@ -65,6 +67,14 @@ function App() {
           </Route> 
 
           <Route path="/create-community" element={<CreateCommunity/>}> 
+            
+          </Route> 
+          
+          <Route path="/user-profile" element={<UserProfile/>}> 
+            
+          </Route> 
+          
+          <Route path="/master-profile" element={<MasterProfile/>}> 
             
           </Route> 
           

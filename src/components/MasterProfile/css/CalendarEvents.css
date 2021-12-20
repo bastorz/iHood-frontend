@@ -1,0 +1,45 @@
+@import url(@bbon/react-calendar/dist/calendar.css);
+
+#calendar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#calendar .calendar-button {
+    background-color: aquamarine;
+    padding: 0.4rem 0.8rem;
+}
+
+#calendar .calendar-title > div {
+    font-weight: 600;
+}
+
+#calendar .calendar-button.previous-year::after {
+    content: '<<';
+}
+#calendar .calendar-button.previous-month::after {
+    content: '<';
+}
+#calendar .calendar-button.next-month::after {
+    content: '>';
+}
+#calendar .calendar-button.next-year::after {
+    content: '>>';
+}
+
+#calendar .calendar-bottom-container > button {
+    background-color: aquamarine;
+    padding: 0.4rem 0.8rem;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}

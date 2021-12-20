@@ -1,4 +1,4 @@
-import {Button} from "../Button/Button"
+/* import {Button} from "../Button/Button" */
 import { CommunityService } from "../../services/community.service";
 import styles from './Invite.module.css';
 import { Icon } from '@iconify/react';
@@ -22,18 +22,35 @@ export const Invite = () => {
                     <Icon className={styles.iconHouse} icon="noto:house-with-garden" />
                 </div>
                 <div className={styles.blockMid}>
+                    <div className={styles.blockMidTop}>
+                        <p className={styles.title}>Bienvenido a iHood!</p>
+                        <Icon className={styles.houseIcon} icon="noto:house-with-garden" />
+                    </div>
+                    <div className={styles.blockMidBottom}>
+                        <p className={styles.title}>Bienvenido a iHood!</p>
                     <Icon className={styles.userIcon} icon="carbon:user-avatar" color="#7879f1" />
                     <p className={styles.middleParagraph}>Matthew Blake</p>
                     <p className={styles.middleParagraph}>Matt-Bk@gmail.com</p>
-                    <Button className={styles.buttonGenerateInvitation} variant="blue" >Editar perfil</Button>
+                    <input      
+                                className={styles.buttonEditProfile}
+                                type="button"
+                                id="Pagos de la comunidad"
+                                value="Edita tu perfil"
+                            ></input>
                     <p className={styles.middleParagraph}>¿Has añadido ya a todos los miembros de tu comunidad?</p>
                     <p className={styles.middleParagraph}>¡Genera una nueva invitación aquí!</p>
-                    <input type="button" className={styles.buttonGenerateInvitation} onClick={showInvitation} value="generar codigo"></input>
+                    <input      
+                                className={styles.buttonGenerateInvitation}
+                                type="button"
+                                id="Pagos de la comunidad"
+                                value="Generar invitación"
+                                onClick= {showInvitation}
+                            ></input>
                     <div className={styles.invitationContainer}>
-                        <input type="text" value={code}></input>
+                        <input className = {styles.invitationHold}  type="text" value={code}></input>
                     </div>
                     
-                    
+                </div>    
                     {/* <input placeholder={code} className="invitation-container" type="text" /> */}
                 </div>
                 <div className={styles.blockRight}></div>            

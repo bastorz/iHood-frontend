@@ -6,9 +6,9 @@ const request = async (config: AxiosRequestConfig) => {
         'Content-Type': 'application/json',
         ...config.headers,
     }
-    return Axios({ ...config })
+    /* return Axios({ ...config }) */
     // TODO: using withCredential throws a CORS error
-    // return Axios({ ...config, withCredentials: true })
+    return Axios({ ...config, withCredentials: true })
 }
 
 const RequestManager = {
