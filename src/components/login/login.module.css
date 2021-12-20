@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,800&display=swap');
+
+
+.containerPrincipal{
+  height: 100vh;
+  width: 100vw;
+  border: 1px solid red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.title{
+  color:rgb(57, 57, 114);
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.houseIcon{
+  font-size: 80px;
+}
+
+.containerLogin{
+  height: 700px;
+  width: 500px;
+  border: 1px solid blue;
+  background-color: rgb(190, 190, 243);
+}
+
+.containerLoginTop{
+  height: 100px;
+  width: 100%;
+  border: 1px solid orange;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.containerLoginMid{
+  height: 400px;
+  width: 100%;
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.inputs{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: space-around;
+  gap: 10px;
+}
+
+.containerDecolines{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content:space-between;
+  flex-direction:column;
+}
+
+.decolines1 {
+  background-color: white;
+  height: 5px;
+  }
+.decolines2 {
+  background-color: white;
+  height: 5px;
+  }
+.decolines3 {
+  background-color: white;
+  height: 5px;
+  }
+.decolines4 {
+  background-color: white;
+  height: 5px;
+  }
+.decolines5 {
+  background-color: white;
+  height: 5px;
+  }
+
+  .containerLoginBottom{
+    height: 145px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .containerLoginBottomUp{
+    height: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }

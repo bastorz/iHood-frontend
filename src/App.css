@@ -1,7 +1,7 @@
 body{
-  background-color: white;
+  background-color: rgb(195, 211, 241);
 }
 
 .App {
-border: 1px solid red;
+border: 1px solid blue;
 }

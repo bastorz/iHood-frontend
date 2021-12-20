@@ -12,8 +12,7 @@
     height:50%;
     flex-direction: row;
     margin:0;
-    
-
+    background-color: rgb(185, 185, 206);
 }
 
 .block-left-nav{

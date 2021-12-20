@@ -13,4 +13,12 @@ export const AuthService = {
     signIn: (user: { user: string; password: string }) => {
         return RequestManager.post(withBase(`/auth/sign-in`), user)
     },
+
+    whoami: () => {
+        return RequestManager.get(withBase(`/auth/whoami`))
+    },
+
+    createCommunity: (community: { community: string }) => {
+        return RequestManager.post(withBase(`/communities`), community)
+    },
 }

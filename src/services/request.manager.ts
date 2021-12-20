@@ -1,29 +1,31 @@
-import Axios, { AxiosRequestConfig } from "axios";
+import Axios, { AxiosRequestConfig } from 'axios'
 
 const request = async (config: AxiosRequestConfig) => {
     config.headers = {
-        Accept: "application/json",
-        "Content-Type": "application/json",
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
         ...config.headers,
-    };
-    return Axios(config);
-};
+    }
+    return Axios({ ...config })
+    // TODO: using withCredential throws a CORS error
+    // return Axios({ ...config, withCredentials: true })
+}
 
-const RequestManager =  {
+const RequestManager = {
     get: async (url: string, config?: AxiosRequestConfig) =>
         request({
-            method: "get",
+            method: 'get',
             url,
             ...config,
         }),
 
     put: async (
         url: string,
-        data: AxiosRequestConfig["data"],
+        data: AxiosRequestConfig['data'],
         config?: AxiosRequestConfig
     ) =>
         request({
-            method: "put",
+            method: 'put',
             url,
             data,
             ...config,
@@ -31,11 +33,11 @@ const RequestManager =  {
 
     post: async (
         url: string,
-        data: AxiosRequestConfig["data"],
+        data: AxiosRequestConfig['data'],
         config?: AxiosRequestConfig
     ) =>
         request({
-            method: "post",
+            method: 'post',
             url,
             data,
             ...config,
@@ -43,22 +45,22 @@ const RequestManager =  {
 
     patch: async (
         url: string,
-        data: AxiosRequestConfig["data"],
+        data: AxiosRequestConfig['data'],
         config?: AxiosRequestConfig
     ) =>
         request({
-            method: "patch",
+            method: 'patch',
             url,
             data,
             ...config,
         }),
- 
+
     delete: async (url: string, config?: AxiosRequestConfig) =>
         request({
-            method: "delete",
+            method: 'delete',
             url,
             ...config,
         }),
-};
+}
 
-export default RequestManager;
+export default RequestManager

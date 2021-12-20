@@ -1,6 +1,6 @@
 import {Button} from "../Button/Button"
 import { CommunityService } from "../../services/community.service";
-import './css/Invite.css';
+import styles from './Invite.module.css';
 import { Icon } from '@iconify/react';
 import React, { useState } from 'react';
 
@@ -16,27 +16,27 @@ export const Invite = () => {
         
     }
 
-    return  <div className="container">
-                <div className="block-left">
-                    <p className="hola-presidente">¡Hola, presidente!</p>
-                    <Icon className="icon-house" icon="noto:house-with-garden" />
+    return  <div className={styles.container}>
+                <div className={styles.blockLeft}>
+                    <p className={styles.holaPresidente}>¡Hola, presidente!</p>
+                    <Icon className={styles.iconHouse} icon="noto:house-with-garden" />
                 </div>
-                <div className="block-mid">
-                    <Icon className="user-icon" icon="carbon:user-avatar" color="#7879f1" />
-                    <p className="middle-paragraph">Matthew Blake</p>
-                    <p className="middle-paragraph">Matt-Bk@gmail.com</p>
-                    <Button className="button-generate-invitation" variant="blue" >Editar perfil</Button>
-                    <p className="middle-paragraph">¿Has añadido ya a todos los miembros de tu comunidad?</p>
-                    <p className="middle-paragraph">¡Genera una nueva invitación aquí!</p>
-                    <Button className="button-generate-invitation" variant="blue" onClick={showInvitation}>Genera un código de invitación</Button>
-                    <div className="invitation-container">
+                <div className={styles.blockMid}>
+                    <Icon className={styles.userIcon} icon="carbon:user-avatar" color="#7879f1" />
+                    <p className={styles.middleParagraph}>Matthew Blake</p>
+                    <p className={styles.middleParagraph}>Matt-Bk@gmail.com</p>
+                    <Button className={styles.buttonGenerateInvitation} variant="blue" >Editar perfil</Button>
+                    <p className={styles.middleParagraph}>¿Has añadido ya a todos los miembros de tu comunidad?</p>
+                    <p className={styles.middleParagraph}>¡Genera una nueva invitación aquí!</p>
+                    <Button className={styles.buttonGenerateInvitation} variant="blue" onClick={showInvitation}>Genera un código de invitación</Button>
+                    <div className={styles.invitationContainer}>
                         <a href={code} target="_blank" rel="noreferrer"><p>{code}</p></a>
                     </div>
                     
                     
                     {/* <input placeholder={code} className="invitation-container" type="text" /> */}
                 </div>
-                <div className="block-right"></div>            
+                <div className={styles.blockRight}></div>            
             </div>
 }
 

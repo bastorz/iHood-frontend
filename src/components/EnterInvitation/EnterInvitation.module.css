@@ -15,7 +15,7 @@
     height: 80vh;
 }
 
-.block-left {
+.blockLeft {
     display: flex;
     flex-direction: column;
     align-items: space-between;
@@ -24,7 +24,7 @@
     width: 25%;
 }
 
-.hola-presidente{
+.holaPresidente{
     margin: 20px 20px;
     font-family: 'Raleway', sans-serif;
     color: #6969e9;
@@ -32,11 +32,11 @@
     font-weight: bolder;
 }
 
-.icon-house{
+.iconHouse{
     font-size: 150px;
 }
 
-.block-mid{
+.blockMid{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,18 +47,18 @@
     padding: 20px 0 20px 0;
 }
 
-.user-icon{
+.userIcon{
     font-size: 150px;
 }
 
-.middle-paragraph{
+.middleParagraph{
     font-family: 'Raleway', sans-serif;
     color: #6969e9;
     font-size: 20px;
     font-weight: bolder;
 }
 
-.invitation-container{
+.invitationContainer{
     width: 580px;
     height: 25px;
     font-family: 'Raleway', sans-serif;
@@ -71,17 +71,19 @@
     margin-top: 10px;
 }
 
-.button-generate-invitation{
+.buttonJoinCommunity{
     font-family: 'Raleway', sans-serif;
     color: #6969e9;
     font-size: 15px;
     font-weight: bolder;
     border-radius: 20px;
+    margin-top: 20px;
     margin-bottom: 5px;
     padding: 5px 10px 5px 10px;
+    
 }
 
-.block-right{
+.blockRight{
     height: 100%;;
     width: 25%;
 }
