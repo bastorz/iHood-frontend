@@ -1,6 +1,6 @@
 import RequestManager from './request.manager'
 
-const BASE_URL = process.env.REACT_APP_BASE_URL || 'api.ihood.es'
+const BASE_URL = process.env.REACT_APP_BASE_URL || 'https://api.ihood.es'
 
 console.log(BASE_URL)
 const withBase = (url: string) => `${BASE_URL}${url}`
