@@ -6,7 +6,6 @@
     align-items: center;
     flex-direction: column;
     gap: 1rem;
-    border: 1px solid #7879F1;
 }
 
 .userListCont h2 {

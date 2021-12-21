@@ -11,7 +11,7 @@ export const Invite = () => {
     const showInvitation = async () => {
         
         const invitationCode = await CommunityService.claimTenantInvitation('') 
-        console.log(invitationCode)
+        console.log(invitationCode) 
         setCode(invitationCode.data.code)
         
     }

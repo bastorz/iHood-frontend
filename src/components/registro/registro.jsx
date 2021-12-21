@@ -3,6 +3,7 @@ import styles from './registro.module.css'
 import { Icon } from '@iconify/react'
 import { Button } from '../Button/Button'
 import { AuthService } from '../../services/auth.service'
+import { Link } from 'react-router-dom'
 
 //state type
 
@@ -109,9 +110,7 @@ export const SignUp = () => {
                                 <p>¿Ya tienes cuenta?</p>
                             </div>
                             <div className={styles.containerLoginBottomUp}>
-                                <Button className="" onClick={handleSubmit}>
-                                    ¡Entra aquí!
-                                </Button>
+                                <Link to="/sign-in">Entra a tu cuenta</Link>
                             </div>
                         </div>
                     </div>

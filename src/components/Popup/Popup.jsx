@@ -24,7 +24,7 @@ export const Popup = (props) => {
                     >
                         x
                     </span>
-                    {props.content}
+                    {props.children}
                 </div>
             </div>
         ))

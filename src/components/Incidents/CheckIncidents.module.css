@@ -78,22 +78,28 @@
 }
 
 .blockLeftContainer{
-    height: 600px;
-    width: 500px;
+    height: 800px;
+    width: 1500px;
     border: 1px solid grey;
     background-color: grey;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: left;
+
 }
 
 
 .blockLeft{
     height:100%;
-    width: 50%;
+    width: 100%;
     display:flex;
     flex-direction: column;
     border: 1px solid blue;
     background: rgb(215, 239, 248);
     align-items: center;
     justify-content: center;
+    border: 1px solid red;
     
 }
 
@@ -108,12 +114,13 @@
 
 .blockLeftTop{
     width:100%;
-    height: 80%;
+    height: 100%;
     display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     padding-top: 20px;
+    border: 1px solid blue;
 }
 
 .Contenedores{

@@ -39,23 +39,6 @@ const UserInfo = () => {
                         <h2>Mi Casa</h2>
                         <div>- 3ºA -</div>
                     </div>
-                    <div className={styles.myHomeMembers}>
-                        <h3>Mi Familia</h3>
-                        <div className={styles.members}>
-                            <div className={styles.memberImage}>
-                                Foto
-                            </div>
-                            <div className={styles.memberImage}>
-                                Foto
-                            </div>
-                            <div className={styles.memberImage}>
-                                Foto
-                            </div>
-                            <div className={styles.memberImage}>
-                                <Icon className= {styles.iconAddMember} icon="bx:bx-user-plus" />
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>

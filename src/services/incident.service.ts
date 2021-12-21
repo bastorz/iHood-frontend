@@ -11,4 +11,9 @@ export const IncidentService = {
             data,
         })
     },
+    postIncidentData: (data: Record<string, any>) => {
+        return RequestManager.post(withBase(`/incidents/post-incidents`), {
+            data,
+        })
+    },
 }

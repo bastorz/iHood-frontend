@@ -35,6 +35,22 @@
     color: blue;
 }
 
+.navegador{
+    width: 80%;
+    height: 60px;
+}
+
+.ysi{
+    width: 60%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    text-align: flex-end;
+    justify-content: center;
+    padding-top: 17px;
+    border: 1px solid blue;
+}
+
 .block-right-nav{
     height:60px;
     width: 1500px;
@@ -42,6 +58,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    border: 1px solid red;
 
 }
 

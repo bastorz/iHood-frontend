@@ -12,4 +12,12 @@ export const NotificationService = {
             { data }
         )
     },
+    postNotificationData: (data: Record<string, any>) => {
+        return RequestManager.post(
+            withBase(`/notifications/post-notifications`),
+            {
+                data,
+            }
+        )
+    },
 }

@@ -3,6 +3,7 @@ import styles from './payments.module.css'
 import { Icon } from '@iconify/react'
 import { Popup } from '../Popup/Popup'
 import { PaymentsService } from '../../services/payment.service'
+import Login from '../login/login'
 
 export const Payment = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -32,7 +33,10 @@ export const Payment = () => {
                             onClick={togglePopup}
                         ></input>
                         {isOpen && (
-                            <Popup content={<></>} handleClose={togglePopup} />
+                            <Popup handleClose={togglePopup}>
+                                {' '}
+                                <Login></Login>{' '}
+                            </Popup>
                         )}
                     </div>
 

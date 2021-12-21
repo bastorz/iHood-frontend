@@ -4,6 +4,7 @@ import { Button } from '../Button/Button'
 import { Icon } from '@iconify/react'
 import { AuthService } from '../../services/auth.service'
 import { useMainContext } from '../context/Main.context'
+import { Link } from 'react-router-dom'
 // import LoginFooter from './LoginFooter'
 
 export const SignIn = () => {
@@ -30,6 +31,7 @@ export const SignIn = () => {
         const newRecord = { ...userSignIn }
 
         const registrationCode = await AuthService.signIn(newRecord)
+
         const whoami = await AuthService.whoami()
 
         setRecords([...records, newRecord])
@@ -92,9 +94,7 @@ export const SignIn = () => {
                                 <p>¿Aún no tienes cuenta?</p>
                             </div>
                             <div className={styles.containerLoginBottomUp}>
-                                <Button className="" onClick={handleSubmit}>
-                                    ¡Regístrate aquí!
-                                </Button>
+                                <Link to="/sign-up">Registrarse</Link>
                             </div>
                         </div>
                     </div>

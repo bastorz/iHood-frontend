@@ -46,12 +46,12 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
-    border: 1px solid #7879F1;
+
 }
 .decoSingleLine{
     width: 3px;
     height: 65%;
-    border: 1px solid #7879F1;
+
     background: #7879F1;
     border-radius: 15px;
 }
@@ -63,7 +63,7 @@
     height: 102%;
 }
 .decoLinesContainer > div{
-    border: 1px solid #7879F1;
+
     background: #7879F1;
     border-radius: 15px;
 }

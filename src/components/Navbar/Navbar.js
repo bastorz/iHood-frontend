@@ -11,22 +11,41 @@ export const Navbar = () => {
         <p className="ihood-title">iHood</p>
         <Icon className="iconhouse" icon="noto:house-with-garden" />
       </div>
-      <div>{user?.name}</div>
-      <div className="block-right-nav">
-        <Link className="links" to="/">Home</Link>
-        <Link className="links" to="/create-notification">Notificaciones</Link>
-        <Link className="links" to="/create-incidents">Incidencias</Link>
-        <Link className="links" to="/enter-invitation">colocar código</Link>
+
+      <div >
+
         {!isLoggedIn && (<>
-          <Link className="links" to="/sign-in">Logearse</Link>
-          <Link className="links" to="/sign-up">Registrarse</Link>
+
+          <div className="navegador">
+            <ul className="ysi">
+              <ul ><a href="/">Home</a></ul>
+              <ul><a href="/sign-in">Logearse</a></ul>
+              <ul><a href="/sign-up">Registrarse</a></ul>
+            </ul>
+          </div>
         </>)}
-        {isLoggedIn ? <><button onClick={logout}>Logouyt</button></> : null}
-        {/* {user.role === "admin" ? (<>
-          <Link className="links" to="/sign-in">Logearse</Link>
-        </>) : null} */}
-        <Link className="links" to="/generate-invitation">Generar código</Link>
       </div>
+
+      <div className="navegador">
+        <ul className="ysi">
+          <ul ><a href="/generate-invitation">Home</a></ul>
+          <ul><a href="/create-notification">Logearse</a></ul>
+          <ul><a href="/sign-up">Registrarse</a></ul>
+        </ul>
+      </div>
+
+
+      <div >
+
+        {isLoggedIn && (<>
+          <button onClick={logout}>Logout</button>
+          <Link className="links" to="/generate-invitation">codigo</Link>
+          <Link className="links" to="/create-notification">Notificaciones</Link>
+          <Link className="links" to="/create-incidents">Incidencias</Link>
+          <Link className="links" to="/enter-invitation">colocar código</Link>
+        </>)}
+      </div>
+
     </div>
   );
 }
