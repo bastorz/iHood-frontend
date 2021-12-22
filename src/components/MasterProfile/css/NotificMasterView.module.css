@@ -20,13 +20,13 @@
     font-family: 'Raleway', sans-serif;
     font-size: 1.5rem;
     font-weight: bold;
-    color: #5152C3;
+    color: #ffffff;
     text-transform: uppercase;
     margin-bottom: 0;
 }
 .iconNotif {
     font-size: 2.5rem;
-    color: #5152C3;
+    color: #ffffff;
     margin-bottom: 0.5rem;
 }
 .notifBox{
@@ -37,8 +37,8 @@
     align-items: center;
     flex-direction: column;
     gap: 1rem;
-    border-top: 2px solid #7879F1;
-    border-bottom: 2px solid #7879F1;
+    border-top: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
 
 }
 .notifBox button {
@@ -46,9 +46,9 @@
     height: 5rem;
     border-radius: 1rem;
     background: #e1e2fd;
-    border: 2.5px solid #7879F1;
+    border: 2.5px solid #ffffff;
     font-family: 'Raleway', sans-serif;
     font-size: 1rem;
     font-weight: bold;
-    color: #7879F1;
+    color: #ffffff;
 }

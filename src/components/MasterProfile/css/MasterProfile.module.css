@@ -51,8 +51,8 @@
 .decoSingleLine{
     width: 3px;
     height: 65%;
-    border: 1px solid #7879F1;
-    background: #7879F1;
+    border: 1px solid #ffffff;
+    background: #ffffff;
     border-radius: 15px;
 }
 .decoLinesContainer{
@@ -61,25 +61,4 @@
     flex-direction:row;
     width: 4%;
     height: 102%;
-}
-.decoLinesContainer > div{
-    border: 1px solid #7879F1;
-    background: #7879F1;
-    border-radius: 15px;
-}
-
-.decoLine1 {
-    width: 2%;
-}
-.decoLine2 {
-    width: 4%;
-}
-.decoLine3 {
-    width: 6%;
-}
-.decoLine4 {
-    width: 8%;
-}
-.decoLine5 {
-    width: 10%;
 }

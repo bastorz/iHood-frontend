@@ -9,8 +9,7 @@ const UserInfo = () => {
                     Foto de Perfil
                 </div>
                 <div className={styles.userNameCont}>
-                    <div className={styles.userName}>Nombre Usuario</div>
-                    <div className={styles.userEmail}>Email Usuario</div>
+                    
                 </div>
             </div>
 

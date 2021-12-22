@@ -6,8 +6,7 @@
     align-items: center;
     flex-direction: column;
     gap: 1rem;
-    background: rgb(2,0,36);
-    background: radial-gradient(circle, rgba(178, 177, 196, 0.356) 0%, rgba(203, 205, 214, 0.26) 35%, rgb(157, 185, 236) 96%);
+    
 }
 
 .userInfo{

@@ -42,7 +42,7 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-gap: 40px;
+gap: 30px;
 }
 
 .descNot {
@@ -94,7 +94,6 @@ gap: 40px;
     width: 400px;
     font-weight: bolder;
     border-radius: 20px;
-    margin-top: 25px;
     border: #ffffff 3px solid;
     display: flex;
     align-items: flex-start;
@@ -116,7 +115,8 @@ gap: 40px;
 .titulo{
     color: #ffffff;
     font-family: 'Raleway', sans-serif;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
+
 }
 
 .titulo2{

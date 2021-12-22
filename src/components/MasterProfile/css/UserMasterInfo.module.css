@@ -1,6 +1,6 @@
 .userInfoContainer{
     width: 100%;
-    height: 100%;
+    height: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9,9 +9,9 @@
 }
 
 .userInfo{
-
-    background: rgb(2,0,36);
-    background: radial-gradient(circle, rgba(2, 0, 36, 0.534) 0%, rgba(74, 84, 126, 0.26) 35%, rgba(37, 70, 130, 0.767) 96%);
+    width: 240px;
+    height: 120px;
+    
 }
 .myHomeContainer {
     width: 100%;
@@ -59,8 +59,8 @@
 .decoSingleLine{
     width: 70%;
     height: 2.5px;
-    border: 1px solid #7879F1;
-    background: #7879F1;
+    border: 1px solid #ffffff;
+    background: #ffffff;
     border-radius: 15px;
 }
 
@@ -115,7 +115,7 @@
     text-align: left;
     text-transform: uppercase;
     text-decoration: underline;
-    color: #5152C3;
+    color: #ffffff;
 }
 
 .location{
@@ -129,7 +129,7 @@
 
 .iconLocation{
     font-size: 2rem;
-    color: #5152C3;
+    color: #ffffff;
 }
 
 .location div{
@@ -137,7 +137,7 @@
     font-size: 1rem;
     font-weight: bold;
     text-align: left;
-    color: #7879F1;
+    color: #ffffff;
 }
 
 .presiImage{
@@ -160,7 +160,7 @@
     text-align: left;
     text-transform: uppercase;
     text-decoration: underline;
-    color: #5152C3;
+    color: #ffffff;
 }
 
 .presiName{
@@ -169,7 +169,7 @@
     font-size: 1rem;
     font-weight: bold;
     text-align: left;
-    color: #7879F1;
+    color: #ffffff;
 }
 
 .myHomeContent{
@@ -199,12 +199,12 @@
     text-align: center;
     text-transform: uppercase;
     text-decoration: underline;
-    color: #5152C3;
+    color: #ffffff;
 }
 
 .myHomeInfo div{
     width: 40%;
-    border: 1px solid #5152C3;
+    border: 1px solid #ffffff;
     border-radius: 10px;
     background: #e1e2fd;
     font-family: 'Raleway', sans-serif;
@@ -241,7 +241,7 @@
     align-items: center;
     flex-direction: row;
     gap: 1rem;
-    border: 1px solid #5152C3;
+    border: 1px solid #ffffff;
     border-radius: 10px;
     background: #e1e2fd;
 }

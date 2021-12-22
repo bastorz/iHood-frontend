@@ -1,6 +1,6 @@
-import { React, useState, useEffect } from 'react'
-import styles from './CheckIncidents.module.css'
-import { IncidentService } from '../../services/incident.service'
+import { React, useState, useEffect } from 'react';
+import styles from './CheckIncidents.module.css';
+import { IncidentService } from '../../services/incident.service';
 
 export const CheckIncidents = () => {
     const [incident, setIncident] = useState([])

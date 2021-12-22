@@ -16,7 +16,7 @@ export const MasterProfile = () => {
           <div className={styles.profileContainer}>
 
             <div className={styles.calendar}>
-              <p className={styles.title}>"¡Hola, Nombre-Usuario!"</p>
+              <p className={styles.title}>"¡Hola, Vecino!"</p>
               <div className={styles.calendarBox}>
               <CalendarEvents />
               </div>

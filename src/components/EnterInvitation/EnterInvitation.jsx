@@ -35,41 +35,25 @@ export const EnterInvitation = () => {
         <div className={styles.container}>
             <div className={styles.blockLeft}>
                 <p className={styles.holaPresidente}>¡Hola, vecino!</p>
-                <Icon
-                    className={styles.iconHouse}
-                    icon="noto:house-with-garden"
-                />
             </div>
             <div className={styles.blockMid}>
-                <Icon
-                    className={styles.userIcon}
-                    icon="carbon:user-avatar"
-                    color="#7879f1"
-                />
-                <p className={styles.middleParagraph}>Matthew Blake</p>
-                <p className={styles.middleParagraph}>Matt-Bk@gmail.com</p>
-                <input
-                    className={styles.buttonEditProfile}
-                    type="button"
-                    id="Pagos de la comunidad"
-                    value="Edita tu perfil"
-                ></input>
                 <p className={styles.middleParagraph}>
                     ¿Aún no formas parte de la mejor comunidad?
                 </p>
                 <p className={styles.middleParagraph}>
                     ¡Únete utilizando el código de invitación!
                 </p>
-                {/*  <Button className="button-generate-invitation" variant="blue" onClick={showInvitation}>Genera un código de invitación</Button> */}
+
                 <input
                     type="text"
                     className={styles.inputs}
                     name="name"
-                    placeholder="Nombre de la comunidad"
+                    placeholder="Código de invitación"
                     onChange={handleInput}
                 />
-                <Button onClick={handleSubmit}>Crear comunidad</Button>
-                {/* <input placeholder={code} className="invitation-container" type="text" /> */}
+                <Button className={styles.inputs2} onClick={handleSubmit}>
+                    ¡Unirse a la comunidad!
+                </Button>
             </div>
             <div className={styles.blockRight}></div>
         </div>

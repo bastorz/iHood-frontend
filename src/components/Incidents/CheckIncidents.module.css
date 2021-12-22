@@ -17,7 +17,7 @@
 .blockRight{
     height:100%;
     width: 50%;
-    border: 1px solid red;
+    
     display:flex;
     flex-direction:column;
     justify-content: center;
@@ -35,7 +35,7 @@
 
 .MainContainer h2 {
     font-size: 20px;
-    color: #0004ff;
+    
     margin-bottom: 30px;
 }
 .MainContainer input, .MainContainer textarea, .MainContainer select {
@@ -78,14 +78,15 @@
 }
 
 .blockLeftContainer{
-    width: 50%;
-    height: 60%;
+    height: 800px;
+    width: 1500px;
+    
+    background: rgb(2,0,36);
+  background: radial-gradient(circle, rgba(2, 0, 36, 0) 0%, rgba(74, 84, 126, 0) 35%, rgba(37,69,130,1) 96%);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: rgb(2,0,36);
-    background: radial-gradient(circle, rgba(2, 0, 36, 0.356) 0%, rgba(74, 84, 126, 0.26) 35%, rgba(37,69,130,1) 96%);
+    align-items: left;
+    justify-content: left;
 
 }
 
@@ -95,11 +96,12 @@
     width: 100%;
     display:flex;
     flex-direction: column;
-    border: 1px solid blue;
-    background: rgb(215, 239, 248);
+    
+    background-image: url("https://i.imgur.com/xwNFy3D.jpg");
+    background-size: 2500px 1200px;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
+    
     
 }
 
@@ -120,7 +122,7 @@
     align-items: center;
     justify-content: space-between;
     padding-top: 20px;
-    border: 1px solid blue;
+    
 }
 
 .Contenedores{

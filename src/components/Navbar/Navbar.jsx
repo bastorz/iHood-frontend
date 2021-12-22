@@ -57,7 +57,7 @@ export const Navbar = () => {
                             Pagos
                         </Link>
                         <Link className="links" to="/create-incidents">
-                            Incidencias
+                            Crear incidencias
                         </Link>
                         <Link className="links" to="/user-profile">
                             Mi perfil

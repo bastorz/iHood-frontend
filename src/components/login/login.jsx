@@ -40,11 +40,8 @@ export const SignIn = () => {
 
         setUser(whoami.data.user)
 
-        console.log('hola', whoami.data.user)
-
         setuserSignIn({ email: '', password: '' })
     }
-
     return (
         <div className={styles.containerPrincipal}>
             <div className={styles.containerLogin}>
@@ -114,7 +111,7 @@ export const SignIn = () => {
                                     className={styles.tienescuenta}
                                     to="/sign-up"
                                 >
-                                    Registrarse
+                                    Regístrate aquí
                                 </Link>
                             </div>
                         </div>

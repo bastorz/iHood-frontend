@@ -11,7 +11,8 @@
     width: 100vw;
     display: flex;
     flex-direction: row;
-    background: linear-gradient(to left, #c0c1f1 40%, #bcbdfc 50%, #E9E9F9 65%);
+        background-image: url("https://i.imgur.com/xwNFy3D.jpg");
+        background-size: 2500px 1200px;
     font-family: "Quicksand";
 }
 .blockRight{
@@ -80,8 +81,8 @@
 .blockLeftContainer{
     height: 800px;
     width: 1500px;
-    border: 1px solid grey;
-    background-color: grey;
+    background: rgb(2,0,36);
+  background: radial-gradient(circle, rgba(2, 0, 36, 0) 0%, rgba(74, 84, 126, 0) 35%, rgba(37,69,130,1) 96%);
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -95,11 +96,11 @@
     width: 100%;
     display:flex;
     flex-direction: column;
-    border: 1px solid blue;
-    background: rgb(215, 239, 248);
+    background-image: url("https://i.imgur.com/xwNFy3D.jpg");
+    background-size: 2500px 1200px;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
+    
     
 }
 
@@ -120,7 +121,7 @@
     align-items: center;
     justify-content: space-between;
     padding-top: 20px;
-    border: 1px solid blue;
+    
 }
 
 .Contenedores{

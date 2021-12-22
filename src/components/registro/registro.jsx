@@ -57,7 +57,7 @@ export const SignUp = () => {
                     </div>
                 </div>
                 <div className={styles.containerLoginMid}>
-                    <p className= {styles.aqui}>¡Regístrate aquí!</p>
+                    <p className={styles.aqui}>¡Regístrate aquí!</p>
 
                     <div className={styles.inputs}>
                         <input
@@ -92,11 +92,17 @@ export const SignUp = () => {
                             onChange={handleInput}
                         />
 
-                        <Button className= {styles.registerbottom} onClick={handleSubmit}>
+                        <Button
+                            className={styles.registerbottom}
+                            onClick={handleSubmit}
+                        >
                             Confirmar datos de registro
                         </Button>
 
-                        <Button className= {styles.registerbottom} onClick={goToChooseRol}>
+                        <Button
+                            className={styles.registerbottom}
+                            onClick={goToChooseRol}
+                        >
                             Registrarse
                         </Button>
                     </div>
@@ -113,10 +119,17 @@ export const SignUp = () => {
                     <div className={styles.loginBtn}>
                         <div>
                             <div className={styles.containerLoginBottomUp}>
-                                <p className= {styles.tienescuenta}>¿Ya tienes cuenta?</p>
+                                <p className={styles.tienescuenta}>
+                                    ¿Ya tienes cuenta?
+                                </p>
                             </div>
                             <div className={styles.containerLoginBottomUp}>
-                                <Link className= {styles.tienescuenta} to="/sign-in">Entra a tu cuenta</Link>
+                                <Link
+                                    className={styles.tienescuenta}
+                                    to="/sign-in"
+                                >
+                                    Entra aquí
+                                </Link>
                             </div>
                         </div>
                     </div>
