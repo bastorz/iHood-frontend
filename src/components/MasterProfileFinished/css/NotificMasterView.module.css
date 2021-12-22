@@ -11,14 +11,13 @@
     width: 100vw;
     display: flex;
     flex-direction: row;
-        background-image: url("https://i.imgur.com/xwNFy3D.jpg");
-        background-size: 2500px 1200px;
+    background: linear-gradient(to left, #c0c1f1 40%, #bcbdfc 50%, #E9E9F9 65%);
     font-family: "Quicksand";
 }
 .blockRight{
     height:100%;
     width: 50%;
-    border: 1px solid red;
+    
     display:flex;
     flex-direction:column;
     justify-content: center;
@@ -36,7 +35,7 @@
 
 .MainContainer h2 {
     font-size: 20px;
-    color: #0004ff;
+    
     margin-bottom: 30px;
 }
 .MainContainer input, .MainContainer textarea, .MainContainer select {
@@ -80,7 +79,7 @@
 
 .blockLeftContainer{
     height: 800px;
-    width: 500px;
+    width: 600px;
     display: flex;
     flex-direction: column;
     align-items: left;
@@ -88,23 +87,8 @@
 
 }
 
-h1{
-    margin-left: 120px;
-    color: white;
-}
-
 
 .blockLeft{
-    height:100%;
-    width: 100%;
-    display:flex;
-    flex-direction: column;
-    background-image: url("https://i.imgur.com/xwNFy3D.jpg");
-    background-size: 2500px 1200px;
-    align-items: center;
-    justify-content: center;
-    
-    
 }
 
 .casa{
@@ -138,4 +122,9 @@ h1{
 .bell{
     font-size:24px;
     margin-left: 440px;
+}
+.h1{
+    margin-right: 160px;
+    color: white;
+    padding-left: 60px;
 }

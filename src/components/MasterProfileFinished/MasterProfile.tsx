@@ -1,13 +1,16 @@
-import styles from './css/UserProfile.module.css'
+import styles from './css/MasterProfile.module.css'
 import { Icon } from '@iconify/react';
 import {CalendarEvents} from './CalendarEvents';
-import UserInfo from './UserInfo';
-import {NotificView} from './NotificView';
+import UserInfo from './UserMasterInfo';
+// import NotificView from './NotifMasterView';
+import {CheckIncidents} from './NotifMasterView';
 
-export const UserProfile = () => {
+export const MasterProfileFinished = () => {
   return(
       <div className={styles.pageContainer}>
-         
+         {/* *El NavBar es provisional para distribuir bien los componentes con sus estilos.
+          SUSTITUIR por componente NAvBAr con enrutamiento.
+          Aplicar la misma clase de este navBar al componente NavBAr definitivo para que se apliquen los estilos (en caso de no tenerlos ya) */}
           <div className={styles.navBar}></div>
 
           <div className={styles.profileContainer}>
@@ -31,7 +34,8 @@ export const UserProfile = () => {
             <div className={styles.decoSingleLine}></div>
 
             <div className={styles.notifications}>
-            <NotificView />
+            <CheckIncidents/>
+            {/* <NotificView /> */}
             </div>
 
             <div className={styles.decoLinesContainer}>

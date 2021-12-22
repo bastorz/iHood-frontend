@@ -19,10 +19,11 @@ import { UserProfile } from './components/UserProfile/UserProfile'
 import { GeneralPayment } from './components/Payments/GeneralPayments'
 import { CommunityServicePayment } from './components/Payments/CommunityServicePayments'
 import { ExtraPayment } from './components/Payments/ExtraPayments'
-import { MasterProfile } from './components/MasterProfile/MasterProfile'
+import { MasterProfileFinished } from './components/MasterProfileFinished/MasterProfile'
 import { CheckIncidents } from './components/Incidents/CheckIncidents'
 import { CheckNotification } from './components/Notifications/CheckNotification'
 import { CreatePayment } from './components/Payments/CreatePayment'
+import { PrivateRoute } from './routes/PrivateRoute'
 
 function App() {
     return (
@@ -42,7 +43,8 @@ function App() {
                         <Route
                             path="/create-incidents"
                             element={<CreateIncidents />}
-                        ></Route>
+                        />
+
                         <Route
                             path="/create-notifications"
                             element={<CreateNotification />}
@@ -61,7 +63,7 @@ function App() {
 
                         <Route
                             path="/master-profile"
-                            element={<MasterProfile />}
+                            element={<MasterProfileFinished />}
                         ></Route>
 
                         <Route
