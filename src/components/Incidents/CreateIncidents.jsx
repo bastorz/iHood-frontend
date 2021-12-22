@@ -32,17 +32,17 @@ export const CreateIncidents = () => {
   return (
     <div className={styles.container}>
       <div className={styles.blockRight}>
-        <h2>Escribe tu Incidencia   <Icon icon="bi:bell-fill" color="#7879f1" /> </h2>
+        <h2 className={styles.titulo}>Escribe tu Incidencia   <Icon icon="bi:bell-fill" color="#ffffff" /> </h2>
         <div className={styles.mainContainer}>
           <div className={styles.titleNot}>
-            <h3>Título</h3>
+            <h3 className={styles.titulo}>Título</h3>
             <input className={styles.inputTitle}
               name="title"
               type="text"
               placeholder="titulo ..."
               onChange={handleInput}>
             </input>
-            <h3>Descripción</h3>
+            <h3 className={styles.titulo}>Descripción</h3>
             <input
               name="description"
               type="text"

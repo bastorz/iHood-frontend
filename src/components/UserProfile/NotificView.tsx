@@ -3,26 +3,6 @@ import styles from './css/NotificView.module.css';
 import { Icon } from '@iconify/react';
 
 
-// const Notif = () =>{
-  // const [click, setClick] = React.useState(false);
-
-  // En esta variable iria el contenido de las notificaciones en BDD
-// let NotifContent = [{
-//     title: "Hola, ",
-//     description: "Soy un mensaje de prueba",
-//     statusNew: true,
-// }];
-
-    // const handleOpenMessage =() => {
-    //   NotifContent.length[0].title = "Adios"
-    //   console.log(NotifContent.length[0].title)
-    //   // return(
-    //   //   <div>
-    //   //     <Button>{NotifContent.title}</Button>
-          
-    //   //   </div>
-    //   // )
-    // }
 
 const Notif = () =>{
 

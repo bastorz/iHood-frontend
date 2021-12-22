@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,800&display=swap');
 
 *{
     margin:0;
-    font-family: "Quicksand";
+    font-family: 'Raleway', sans-serif;
 }
 .container {
     margin:0;
@@ -11,13 +11,12 @@
     width: 100vw;
     display: flex;
     flex-direction: row;
-    background: linear-gradient(to left, #c0c1f1 40%, #bcbdfc 50%, #E9E9F9 65%);
-    font-family: "Quicksand";
+    background-repeat: no-repeat;
+    font-family: 'Raleway', sans-serif;
 }
 .blockRight{
     height:100%;
     width: 100%;
-    border: 1px solid red;
     display:flex;
     flex-direction:column;
     justify-content: center;
@@ -27,18 +26,17 @@
 .mainContainer {
 width: 50%;
 height: 60%;
-border: 1px solid red;
 display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-background-color: grey;
+background: rgb(2,0,36);
+background: radial-gradient(circle, rgba(2, 0, 36, 0.356) 0%, rgba(74, 84, 126, 0.26) 35%, rgba(37,69,130,1) 96%);
 }
 
 .titleNot {
 width: 80%;
 height: 80%;
-border: 1px solid rgb(63, 206, 38);
 display: flex;
 flex-direction: column;
 align-items: center;
@@ -68,7 +66,6 @@ gap: 40px;
 
 
 .Contenedores{
-    border: #7879F1 3px solid;
     border-radius: 8px ;
     width: 450px;
     background-color:white;
@@ -84,20 +81,41 @@ gap: 40px;
 .inputTitle{
     height: 30px;
     width: 400px;
-    border: 1px solid red;
+    font-weight: bolder;
+    border-radius: 20px;
+    margin-top: 25px;
+    border: #ffffff 3px solid;
+    
 }
 
 .inputDesc{
     height: 150px;
     width: 400px;
-    border: 1px solid red;
+    font-weight: bolder;
+    border-radius: 20px;
+    margin-top: 25px;
+    border: #ffffff 3px solid;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
 }
 
 .inputBtn{
-    height: 30px;
-    width: 100px;
-    border: 1px solid red;
+    font-family: 'Raleway', sans-serif;
+    color: #6969e9;
+    
+    font-size: 15px;
+    font-weight: bolder;
+    border-radius: 20px;
+    margin-top: 25px;font-weight: bolder;
+    border-radius: 20px;
+    margin-top: 25px;
+    border: #ffffff 3px solid;
+    
+}
+
+.titulo{
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+
 }

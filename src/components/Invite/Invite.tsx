@@ -27,16 +27,11 @@ export const Invite = () => {
                         <Icon className={styles.houseIcon} icon="noto:house-with-garden" />
                     </div>
                     <div className={styles.blockMidBottom}>
-                        <p className={styles.title}>Bienvenido a iHood!</p>
-                    <Icon className={styles.userIcon} icon="carbon:user-avatar" color="#7879f1" />
+            
+                    <Icon className={styles.userIcon} icon="carbon:user-avatar" color="#ffffff" />
                     <p className={styles.middleParagraph}>Matthew Blake</p>
                     <p className={styles.middleParagraph}>Matt-Bk@gmail.com</p>
-                    <input      
-                                className={styles.buttonEditProfile}
-                                type="button"
-                                id="Pagos de la comunidad"
-                                value="Edita tu perfil"
-                            ></input>
+                    
                     <p className={styles.middleParagraph}>¿Has añadido ya a todos los miembros de tu comunidad?</p>
                     <p className={styles.middleParagraph}>¡Genera una nueva invitación aquí!</p>
                     <input      

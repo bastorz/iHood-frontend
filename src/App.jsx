@@ -22,9 +22,7 @@ import { ExtraPayment } from './components/Payments/ExtraPayments'
 import { MasterProfile } from './components/MasterProfile/MasterProfile'
 import { CheckIncidents } from './components/Incidents/CheckIncidents'
 import { CheckNotification } from './components/Notifications/CheckNotification'
-import ProtectedRoutes from './routes/ProtectedRoute' //Authenticated routes
-import PublicRoute from './routes/PublicRoute'
-import { PrivateRoute } from './routes/PrivateRoute'
+import { LoginPresidente } from './components/login/LoginPresidente'
 
 function App() {
     return (
@@ -35,7 +33,7 @@ function App() {
                     <Routes>
                         <Route path="/" element={<Login />}></Route>
 
-                        <Route path="/sign-in" element={<Login />}></Route>
+                        <Route path="/login-user" element={<Login />}></Route>
 
                         <Route path="/sign-up" element={<SignUp />}></Route>
 
@@ -44,6 +42,10 @@ function App() {
                         <Route
                             path="/create-incidents"
                             element={<CreateIncidents />}
+                        ></Route>
+                        <Route
+                            path="/create-notifications"
+                            element={<CreateNotification />}
                         ></Route>
 
                         <Route path="/profile" element={<Myaccount />}></Route>

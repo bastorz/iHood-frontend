@@ -21,13 +21,19 @@ export const Navbar = () => {
                         <div className="navegador">
                             <ul className="ysi">
                                 <ul>
-                                    <a href="/">Home</a>
+                                    <a className="links" href="/">
+                                        Home
+                                    </a>
                                 </ul>
                                 <ul>
-                                    <a href="/sign-in">Logearse</a>
+                                    <a className="links" href="/sign-in">
+                                        Acceder
+                                    </a>
                                 </ul>
                                 <ul>
-                                    <a href="/sign-up">Registrarse</a>
+                                    <a className="links" href="/sign-up">
+                                        Registrarse
+                                    </a>
                                 </ul>
                             </ul>
                         </div>
@@ -35,39 +41,66 @@ export const Navbar = () => {
                 )}
             </div>
 
-            <div className="navegador">
-                <ul className="ysi">
-                    <ul>
-                        <a href="/generate-invitation">Home</a>
-                    </ul>
-                    <ul>
-                        <a href="/create-notification">Logearse</a>
-                    </ul>
-                    <ul>
-                        <a href="/sign-up">Registrarse</a>
-                    </ul>
-                </ul>
-            </div>
-
-            <div>
-                {isLoggedIn && (
-                    <>
-                        <button onClick={logout}>Logout</button>
-                        <Link className="links" to="/generate-invitation">
-                            codigo
-                        </Link>
-                        <Link className="links" to="/create-notification">
+            {isLoggedIn && user.communityRole === 'user' ? (
+                <>
+                    <div className="registeredNavbar">
+                        <Link className="links" to="/general-payments"></Link>
+                        <Link
+                            className="links"
+                            to="/community-service-payments"
+                        ></Link>
+                        <Link className="links" to="/extra-payments"></Link>
+                        <Link className="links" to="/check-notifications">
                             Notificaciones
+                        </Link>
+                        <Link className="links" to="/payments">
+                            Pagos
                         </Link>
                         <Link className="links" to="/create-incidents">
                             Incidencias
                         </Link>
-                        <Link className="links" to="/enter-invitation">
-                            colocar código
+                        <Link className="links" to="/user-profile">
+                            Mi perfil
                         </Link>
-                    </>
-                )}
-            </div>
+
+                        <button className="logoutBtn" onClick={logout}>
+                            Logout
+                        </button>
+                    </div>
+                </>
+            ) : null}
+
+            {isLoggedIn && user.communityRole === 'admin' ? (
+                <>
+                    <div className="registeredNavbar">
+                        <Link className="links" to="/general-payments"></Link>
+                        <Link
+                            className="links"
+                            to="/community-service-payments"
+                        ></Link>
+                        <Link className="links" to="/extra-payments"></Link>
+                        <Link className="links" to="/create-notifications">
+                            Crear notificaciones
+                        </Link>
+                        <Link className="links" to="/payments">
+                            Pagos
+                        </Link>
+                        <Link className="links" to="/generate-invitation">
+                            Generar código
+                        </Link>
+                        <Link className="links" to="/check-incidents">
+                            Incidencias
+                        </Link>
+                        <Link className="links" to="/master-profile">
+                            Mi perfil
+                        </Link>
+
+                        <button className="logoutBtn" onClick={logout}>
+                            Salir
+                        </button>
+                    </div>
+                </>
+            ) : null}
         </div>
     )
 }

@@ -5,10 +5,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(253, 253, 253, 0.582) 0%, rgba(233, 235, 241, 0.966) 35%, rgba(248, 248, 248, 0.644) 96%);
 }
 
 #calendar .calendar-button {
-    background-color: aquamarine;
+    background-color: #ffffff;
     padding: 0.4rem 0.8rem;
 }
 
@@ -30,7 +32,7 @@
 }
 
 #calendar .calendar-bottom-container > button {
-    background-color: aquamarine;
+    background-color: #ffffff;
     padding: 0.4rem 0.8rem;
 }
 

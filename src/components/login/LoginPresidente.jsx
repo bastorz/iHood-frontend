@@ -1,19 +1,19 @@
 import React, { useState } from 'react'
-import styles from './registro.module.css'
-import { Icon } from '@iconify/react'
+import styles from './login.module.css'
 import { Button } from '../Button/Button'
+import { Icon } from '@iconify/react'
 import { AuthService } from '../../services/auth.service'
+import { useMainContext } from '../context/Main.context'
 import { Link } from 'react-router-dom'
+// import LoginFooter from './LoginFooter'
 
-//state type
-
-export const SignUp = () => {
-    const [userRegistration, setuserRegistration] = useState({
-        name: '',
+export const LoginPresidente = () => {
+    const [userSignIn, setuserSignIn] = useState({
         email: '',
-        phone: '',
         password: '',
     })
+
+    const { setUser } = useMainContext()
 
     const [records, setRecords] = useState([])
 
@@ -22,26 +22,26 @@ export const SignUp = () => {
         const value = e.target.value
         console.log(name, value)
 
-        setuserRegistration({ ...userRegistration, [name]: value })
+        setuserSignIn({ ...userSignIn, [name]: value })
     }
     const goToChooseRol = () => {
-        window.location = '/sign-in'
+        window.location = '/choose-rol'
     }
     const handleSubmit = async (e) => {
         e.preventDefault()
 
-        const newRecord = { ...userRegistration }
+        const newRecord = { ...userSignIn }
 
-        const registrationCode = await AuthService.signUp(newRecord)
+        const registrationCode = await AuthService.signIn(newRecord)
+
+        const whoami = await AuthService.whoami()
 
         setRecords([...records, newRecord])
 
-        console.log(records)
-        console.log(registrationCode)
+        setUser(whoami.data.user)
 
-        setuserRegistration({ name: '', email: '', phone: '', password: '' })
+        setuserSignIn({ email: '', password: '' })
     }
-
     return (
         <div className={styles.containerPrincipal}>
             <div className={styles.containerLogin}>
@@ -57,30 +57,14 @@ export const SignUp = () => {
                     </div>
                 </div>
                 <div className={styles.containerLoginMid}>
-                    <p className= {styles.aqui}>¡Regístrate aquí!</p>
+                    <p className={styles.aqui}>¡Acceso de presidente!</p>
 
                     <div className={styles.inputs}>
-                        <input
-                            type="text"
-                            className={styles.formControl}
-                            name="name"
-                            placeholder="Nombre de usuario"
-                            onChange={handleInput}
-                        />
-
                         <input
                             type="email"
                             className={styles.formControl}
                             name="email"
                             placeholder="Email"
-                            onChange={handleInput}
-                        />
-
-                        <input
-                            type="text"
-                            className={styles.formControl}
-                            name="phone"
-                            placeholder="Teléfono"
                             onChange={handleInput}
                         />
 
@@ -92,12 +76,17 @@ export const SignUp = () => {
                             onChange={handleInput}
                         />
 
-                        <Button className= {styles.registerbottom} onClick={handleSubmit}>
-                            Confirmar datos de registro
+                        <Button
+                            className={styles.registerbottom}
+                            onClick={handleSubmit}
+                        >
+                            Confirmar datos de acceso
                         </Button>
-
-                        <Button className= {styles.registerbottom} onClick={goToChooseRol}>
-                            Registrarse
+                        <Button
+                            className={styles.registerbottom}
+                            onClick={goToChooseRol}
+                        >
+                            Acceder a mi cuenta
                         </Button>
                     </div>
                 </div>
@@ -113,10 +102,17 @@ export const SignUp = () => {
                     <div className={styles.loginBtn}>
                         <div>
                             <div className={styles.containerLoginBottomUp}>
-                                <p className= {styles.tienescuenta}>¿Ya tienes cuenta?</p>
+                                <p className={styles.tienescuenta}>
+                                    ¿Aún no tienes cuenta?
+                                </p>
                             </div>
                             <div className={styles.containerLoginBottomUp}>
-                                <Link className= {styles.tienescuenta} to="/sign-in">Entra a tu cuenta</Link>
+                                <Link
+                                    className={styles.tienescuenta}
+                                    to="/sign-up"
+                                >
+                                    Registrarse
+                                </Link>
                             </div>
                         </div>
                     </div>

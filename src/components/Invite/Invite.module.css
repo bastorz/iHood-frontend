@@ -6,13 +6,16 @@
 } 
 
 .container {
-    margin-top: 70px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     width: 100vw;
-    height: 80vh;
+    height: 100vh;
+    background-image: url("https://i.imgur.com/xwNFy3D.jpg");
+    background-size: 2500px 1200px;
+    background-repeat: no-repeat;
+    
 }
 
 .blockLeft {
@@ -42,10 +45,10 @@
     justify-content: center;
     align-items: center;
     gap: 1.5vh;
-    height: 88%;;
+    height: 78%;;
     width: 35%;
-    border: 1px solid #6969e9;
-    background-color: rgb(190, 190, 243);
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2, 0, 36, 0.514) 0%, rgba(74, 84, 126, 0.397) 35%, rgba(37,69,130,1) 96%);
 }
 
 .blockMidTop{
@@ -61,8 +64,8 @@
 
 
 .title{
-    color:rgb(57, 57, 114);
-    font-weight: bold;
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
     font-size: 24px;
   }
   
@@ -85,11 +88,12 @@
 
 .userIcon{
     font-size: 150px;
+    color: #ffffff;
 }
 
 .middleParagraph{
     font-family: 'Raleway', sans-serif;
-    color: #6969e9;
+    color: #ffffff;
     font-size: 20px;
     font-weight: bolder;
 }
@@ -99,12 +103,12 @@
 .invitationHold{
 
     font-family: 'Raleway', sans-serif;
-    color: #6969e9;
+    color: #ffffff;
     width: 555px;
     height: 22px;
     border-radius: 20px;
     margin-top: 10px;
-    border: #6969e9 3px solid;
+    border: #ffffff 3px solid;
     
 
 }
@@ -120,17 +124,8 @@
     
     
 }
-.buttonEditProfile{
-    font-family: 'Raleway', sans-serif;
-    color: #6969e9;
-    font-size: 15px;
-    font-weight: bolder;
-    border-radius: 20px;
-    margin-bottom: 25px;
-    
-    
-}
 
+    
 .blockRight{
     height: 100%;;
     width: 25%;

@@ -34,13 +34,13 @@ export const CreateNotification = () => {
     return (
         <div className={styles.container}>
             <div className={styles.blockRight}>
-                <h2>
+                <h2 className={styles.titulo}>
                     Escribe tu Notificación{''}
-                    <Icon icon="bi:bell-fill" color="#7879f1" />{' '}
+                    <Icon icon="bi:bell-fill" color="#ffffff" />{' '}
                 </h2>
                 <div className={styles.mainContainer}>
                     <div className={styles.titleNot}>
-                        <h3>Título</h3>
+                        <h3 className={styles.titulo}>Título</h3>
                         <input
                             className={styles.inputTitle}
                             name="title"
@@ -48,8 +48,8 @@ export const CreateNotification = () => {
                             placeholder="titulo ..."
                             onChange={handleInput}
                         ></input>
-                        <h3>Descripción</h3>
-                        <input
+                        <h3 className={styles.titulo}>Descripción</h3>
+                        <input 
                             name="description"
                             type="text"
                             className={styles.inputDesc}

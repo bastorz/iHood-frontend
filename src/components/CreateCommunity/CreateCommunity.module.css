@@ -1,7 +1,6 @@
 .container{
     width: 100vw;
-    height: 700px;
-    border: 1px solid red;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -11,7 +10,8 @@
 .containerCreateCommunity{
     width: 500px;
     height: 600px;
-    border: 1px solid blue;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2, 0, 36, 0.226) 0%, rgba(74, 84, 126, 0.637) 35%, rgba(37, 70, 130, 0.747) 96%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,10 +19,31 @@
     gap: 20px;
 }
 
-.input{
-    width: 50%;
+.inputs{
+    height: 30px;
+    width: 400px;
+    font-weight: bolder;
+    border-radius: 20px;
+    margin-top: 25px;
+    border: #ffffff 3px solid;
 }
 
 h1{
     font-size: 20px;
 }
+
+.buttonGenerateInvitation{
+    font-family: 'Raleway', sans-serif;
+    color: #6969e9;
+    font-size: 15px;
+    font-weight: bolder;
+    border-radius: 20px;
+    margin-top: 25px;
+    
+    
+}
+.title{
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+  }

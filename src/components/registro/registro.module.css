@@ -4,17 +4,20 @@
 .containerPrincipal{
   height: 100vh;
   width: 100vw;
-  border: 1px solid red;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-image: url("https://i.imgur.com/xwNFy3D.jpg");
+  background-size: 2500px 1200px;
+  background-repeat: no-repeat;
  
 }
 
 .title{
-  color:rgb(57, 57, 114);
   font-weight: bold;
   font-size: 24px;
+  color: #ffffff;
+  font-family: 'Raleway', sans-serif;
 }
 
 .houseIcon{
@@ -24,14 +27,13 @@
 .containerLogin{
   height: 700px;
   width: 500px;
-  border: 1px solid blue;
-  background-color: rgb(190, 190, 243);
+  background: rgb(2,0,36);
+  background: radial-gradient(circle, rgba(2, 0, 36, 0) 0%, rgba(74, 84, 126, 0) 35%, rgba(37,69,130,1) 96%);
 }
 
 .containerLoginTop{
   height: 100px;
   width: 100%;
-  border: 1px solid orange;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -42,12 +44,12 @@
 .containerLoginMid{
   height: 400px;
   width: 100%;
-  border: 1px solid green;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 10px;
+  font-family: 'Raleway', sans-serif;
 }
 
 .inputs{
@@ -104,4 +106,37 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
+  }
+
+  .formControl{
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bolder;
+    border-radius: 20px;
+    margin-top: 25px;
+    border: #ffffff 3px solid;
+
+  }
+
+  .aqui{
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
+  }
+
+  .registerbottom{
+
+    font-family: 'Raleway', sans-serif;
+    color: #6969e9;
+    
+    font-size: 15px;
+    font-weight: bolder;
+    border-radius: 20px;
+    margin-top: 25px;
+
+  }
+
+  .tienescuenta{
+
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
   }

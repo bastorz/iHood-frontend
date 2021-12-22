@@ -24,11 +24,9 @@ export const SignIn = () => {
 
         setuserSignIn({ ...userSignIn, [name]: value })
     }
-
     const goToChooseRol = () => {
         window.location = '/choose-rol'
     }
-
     const handleSubmit = async (e) => {
         e.preventDefault()
 
@@ -42,8 +40,11 @@ export const SignIn = () => {
 
         setUser(whoami.data.user)
 
+        console.log('hola', whoami.data.user)
+
         setuserSignIn({ email: '', password: '' })
     }
+
     return (
         <div className={styles.containerPrincipal}>
             <div className={styles.containerLogin}>
@@ -59,7 +60,7 @@ export const SignIn = () => {
                     </div>
                 </div>
                 <div className={styles.containerLoginMid}>
-                    <p>¡Accede a tu cuenta!</p>
+                    <p className={styles.aqui}>¡Accede a tu cuenta!</p>
 
                     <div className={styles.inputs}>
                         <input
@@ -78,10 +79,16 @@ export const SignIn = () => {
                             onChange={handleInput}
                         />
 
-                        <Button className="registerBtn" onClick={handleSubmit}>
+                        <Button
+                            className={styles.registerbottom}
+                            onClick={handleSubmit}
+                        >
                             Confirmar datos de acceso
                         </Button>
-                        <Button className="registerBtn" onClick={goToChooseRol}>
+                        <Button
+                            className={styles.registerbottom}
+                            onClick={goToChooseRol}
+                        >
                             Acceder a mi cuenta
                         </Button>
                     </div>
@@ -98,10 +105,17 @@ export const SignIn = () => {
                     <div className={styles.loginBtn}>
                         <div>
                             <div className={styles.containerLoginBottomUp}>
-                                <p>¿Aún no tienes cuenta?</p>
+                                <p className={styles.tienescuenta}>
+                                    ¿Aún no tienes cuenta?
+                                </p>
                             </div>
                             <div className={styles.containerLoginBottomUp}>
-                                <Link to="/sign-up">Registrarse</Link>
+                                <Link
+                                    className={styles.tienescuenta}
+                                    to="/sign-up"
+                                >
+                                    Registrarse
+                                </Link>
                             </div>
                         </div>
                     </div>

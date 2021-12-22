@@ -39,8 +39,8 @@ export const CreateCommunity = () => {
     return (
         <div className={styles.container}>
             <div className={styles.containerCreateCommunity}>
-                <h1>Rellena los datos de tu comunidad</h1>
-                <p>Nombre de la comunidad</p>
+                <h1 className={styles.title}>Rellena los datos de tu comunidad</h1>
+                <p className={styles.title}>Nombre de la comunidad</p>
 
                 <input
                     type="text"
@@ -49,7 +49,7 @@ export const CreateCommunity = () => {
                     placeholder="Nombre de la comunidad"
                     onChange={handleInput}
                 />
-                <p>Dirección</p>
+                <p className={styles.title}>Dirección</p>
                 <input
                     type="text"
                     className={styles.inputs}
@@ -57,7 +57,7 @@ export const CreateCommunity = () => {
                     placeholder="Dirección"
                     onChange={handleInput}
                 />
-                <p>Ciudad</p>
+                <p className={styles.title}>Ciudad</p>
                 <input
                     type="text"
                     className={styles.inputs}
@@ -65,8 +65,8 @@ export const CreateCommunity = () => {
                     placeholder="Ciudad"
                     onChange={handleInput}
                 />
-                <p>Nº de apartamentos</p>
-                <input
+                <p className={styles.title}>Nº de apartamentos</p>
+                <input 
                     type="number"
                     className={styles.inputs}
                     name="appartments"
@@ -74,7 +74,7 @@ export const CreateCommunity = () => {
                     onChange={handleInput}
                 />
 
-                <Button onClick={handleSubmit}>Crear comunidad</Button>
+                <Button className={styles.buttonGenerateInvitation} onClick={handleSubmit}>Crear comunidad</Button>
             </div>
         </div>
     )

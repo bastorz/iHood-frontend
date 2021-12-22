@@ -322,7 +322,7 @@ export const Calendar = ({
     return (
         <div className="calendar-container">
             <div className="calendar-title">
-                <h2>Calendario de Eventos</h2>
+        
             </div>
             <div className="calendar-controlers">
                 {useMoveToYear && (

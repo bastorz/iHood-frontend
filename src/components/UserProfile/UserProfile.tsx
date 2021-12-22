@@ -7,15 +7,13 @@ import NotificView from './NotificView';
 export const UserProfile = () => {
   return(
       <div className={styles.pageContainer}>
-         {/* *El NavBar es provisional para distribuir bien los componentes con sus estilos.
-          SUSTITUIR por componente NAvBAr con enrutamiento.
-          Aplicar la misma clase de este navBar al componente NavBAr definitivo para que se apliquen los estilos (en caso de no tenerlos ya) */}
+         
           <div className={styles.navBar}></div>
 
           <div className={styles.profileContainer}>
 
             <div className={styles.calendar}>
-              <p className={styles.title}>"¡Hola, Nombre-Usuario!"</p>
+              <p className={styles.title}>"¡Hola, Vecino!"</p>
               <div className={styles.calendarBox}>
               <CalendarEvents />
               </div>

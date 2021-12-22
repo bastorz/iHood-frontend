@@ -48,7 +48,6 @@ const UserInfo = () => {
             <div className={styles.myHomeContainer}>
                 <div className={styles.myHomeContent}>
                     <div className={styles.myHomeInfo}>
-                        <h2>Mi apartamento</h2>
                         <div>- 3ºA -</div>
                     </div>
                    
