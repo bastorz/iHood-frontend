@@ -16,6 +16,9 @@ import { MainContextProvider } from './components/context/Main.context'
 import { ChooseRol } from './components/ChooseRol/ChooseRol'
 import { CreateCommunity } from './components/CreateCommunity/CreateCommunity'
 import { UserProfile } from './components/UserProfile/UserProfile'
+import { GeneralPayment } from './components/Payments/GeneralPayments'
+import { CommunityServicePayment } from './components/Payments/CommunityServicePayments'
+import { ExtraPayment } from './components/Payments/ExtraPayments'
 import { MasterProfile } from './components/MasterProfile/MasterProfile'
 import { CheckIncidents } from './components/Incidents/CheckIncidents'
 import { CheckNotification } from './components/Notifications/CheckNotification'
@@ -38,46 +41,36 @@ function App() {
 
                         {/*  PRIVATE ROUTE */}
 
-                        <Route path="" element={<PrivateRoute />}>
-                            <Route
-                                path="/create-incidents"
-                                element={<CreateIncidents />}
-                            ></Route>
+                        <Route
+                            path="/create-incidents"
+                            element={<CreateIncidents />}
+                        ></Route>
 
-                            <Route
-                                path="/create-notification"
-                                element={<CreateNotification />}
-                            ></Route>
+                        <Route path="/profile" element={<Myaccount />}></Route>
+                        <Route
+                            path="/choose-rol"
+                            element={<ChooseRol />}
+                        ></Route>
 
-                            <Route
-                                path="/profile"
-                                element={<Myaccount />}
-                            ></Route>
-                            <Route
-                                path="/choose-rol"
-                                element={<ChooseRol />}
-                            ></Route>
+                        <Route
+                            path="/user-profile"
+                            element={<UserProfile />}
+                        ></Route>
 
-                            <Route
-                                path="/user-profile"
-                                element={<UserProfile />}
-                            ></Route>
+                        <Route
+                            path="/master-profile"
+                            element={<MasterProfile />}
+                        ></Route>
 
-                            <Route
-                                path="/master-profile"
-                                element={<MasterProfile />}
-                            ></Route>
+                        <Route
+                            path="/check-incidents"
+                            element={<CheckIncidents />}
+                        ></Route>
 
-                            <Route
-                                path="/check-incidents"
-                                element={<CheckIncidents />}
-                            ></Route>
-
-                            <Route
-                                path="/check-notifications"
-                                element={<CheckNotification />}
-                            ></Route>
-                        </Route>
+                        <Route
+                            path="/check-notifications"
+                            element={<CheckNotification />}
+                        ></Route>
 
                         <Route
                             path="/generate-invitation"
@@ -96,6 +89,18 @@ function App() {
                         ></Route>
 
                         <Route path="/payments" element={<Payment />} />
+                        <Route
+                            path="/general-payments"
+                            element={<GeneralPayment />}
+                        />
+                        <Route
+                            path="/community-service-payments"
+                            element={<CommunityServicePayment />}
+                        />
+                        <Route
+                            path="/extra-payments"
+                            element={<ExtraPayment />}
+                        />
                     </Routes>
 
                     <Footer />

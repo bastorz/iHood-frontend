@@ -13,7 +13,7 @@ const Context = React.createContext<MainContext | null>(null)
 const MainContextProvider = ({ children }: { children: React.ReactNode }) => {
     const [state, setState] = React.useState<MainContext["state"]>({
         user: undefined,
-        isLoggedIn: false
+        isLoggedIn: false,
     })
 
     // @ts-ignore

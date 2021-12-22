@@ -38,58 +38,81 @@ export const Myaccount = () => {
 
     return (
         <div className={styles.container}>
-            <div className={styles.containertop}>
-                <div className={styles.blocktop}>
-                    <div>
-                        {' '}
-                        <p className={styles.myaccount}>
-                            Mi cuenta{' '}
-                            <Icon
-                                className={styles.usericon}
-                                icon="bx:bxs-user-pin"
-                                color="#7879f1"
-                            />
-                        </p>{' '}
-                    </div>
+            <div className={styles.halfContainerTop}>
+                <div className={styles.updateDataContainer}>
+                    <h3>Escribe tu antiguo email</h3>
+                    <input
+                        type="text"
+                        className={styles.formControl}
+                        name="email"
+                        placeholder="Email"
+                        onChange={handleInput}
+                    />
+                    <h3>Escribe tu nuevo email</h3>
+                    <input
+                        type="text"
+                        className={styles.formControl}
+                        name="email"
+                        placeholder="Email"
+                        onChange={handleInput}
+                    />
                 </div>
-
-                <div className={styles.blockmid}>
-                    <div className={styles.datacontainer}>
-                        <input
-                            type="text"
-                            placeholder="Pon tu nuevo correo"
-                            name="email"
-                            onChange={handleInput}
-                        ></input>
-                        <input
-                            type="text"
-                            placeholder="Pon tu nuevo nombre"
-                            name="name"
-                            onChange={handleInput}
-                        ></input>
-                        <input
-                            type="text"
-                            placeholder="Pon tu nueva Contraseña"
-                            name="password"
-                            onChange={handleInput}
-                        ></input>
-                        <input
-                            type="text"
-                            placeholder="Pon tu nueva vivienda"
-                            name="appartment_data"
-                            onChange={handleInput}
-                        ></input>
-                        <input
-                            type="button"
-                            value="Actualizar perfil"
-                            onClick={handleSubmit}
-                        ></input>
-                    </div>
+                <div className={styles.updateDataContainer}>
+                    <h3>Escribe tu antigua contraseña</h3>
+                    <input
+                        type="password"
+                        className={styles.formControl}
+                        name="password"
+                        placeholder="Contraseña"
+                        onChange={handleInput}
+                    />
+                    <h3>Escribe tu nueva contraseña</h3>
+                    <input
+                        type="password"
+                        className={styles.formControl}
+                        name="password"
+                        placeholder="Contraseña"
+                        onChange={handleInput}
+                    />
                 </div>
             </div>
-
-            <div className={styles.containerbottom}>
-                <div className={styles.blockbottomdown}></div>
+            <div className={styles.halfContainerBottom}>
+                <div className={styles.updateDataContainer}>
+                    <h3>Escribe tu antiguo nombre de usuario</h3>
+                    <input
+                        type="text"
+                        className={styles.formControl}
+                        name="name"
+                        placeholder="Nombre"
+                        onChange={handleInput}
+                    />
+                    <h3>Escribe tu nuevo nombre de usuario</h3>
+                    <input
+                        type="text"
+                        className={styles.formControl}
+                        name="name"
+                        placeholder="Nombre"
+                        onChange={handleInput}
+                    />
+                </div>
+                <div className={styles.updateDataContainer}>
+                    <h3>Escribe tu antiguo apartamento</h3>
+                    <input
+                        type="text"
+                        className={styles.formControl}
+                        name="appartment"
+                        placeholder="Apartamento"
+                        onChange={handleInput}
+                    />
+                    <h3>Escribe tu nuevo apartamento</h3>
+                    <input
+                        type="text"
+                        className={styles.formControl}
+                        name="apartment"
+                        placeholder="Apartamento"
+                        onChange={handleInput}
+                    />
+                </div>
             </div>
         </div>
     )

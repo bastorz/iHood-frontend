@@ -1,15 +1,21 @@
 import React, { useState, useEffect } from 'react'
 import styles from './payments.module.css'
 import { Icon } from '@iconify/react'
-import { Popup } from '../Popup/Popup'
+import Popup from '../Popup/Popup'
 import { PaymentsService } from '../../services/payment.service'
 import Login from '../login/login'
 
 export const Payment = () => {
-    const [isOpen, setIsOpen] = useState(false)
+    const goToPaymentPage = () => {
+        window.location = '/general-payments'
+    }
 
-    const togglePopup = () => {
-        setIsOpen(!isOpen)
+    const goToCommunityGeneralPaymentPage = () => {
+        window.location = '/community-service-payments'
+    }
+
+    const goToExtraPaymentPage = () => {
+        window.location = '/extra-payments'
     }
 
     return (
@@ -27,38 +33,20 @@ export const Payment = () => {
                     <div>
                         <input
                             type="button"
-                            id="Pagos de la comunidad"
-                            value="Pagos de la comunidad"
+                            id="Pagos extras"
+                            value="Pago mensual"
                             className={styles.paymentsOptions}
-                            onClick={togglePopup}
+                            onClick={goToPaymentPage}
                         ></input>
-                        {isOpen && (
-                            <Popup handleClose={togglePopup}>
-                                {' '}
-                                <Login></Login>{' '}
-                            </Popup>
-                        )}
                     </div>
-
                     <div>
                         <input
                             type="button"
                             id="Pagos extras"
                             value="Pagos extras"
                             className={styles.paymentsOptions}
-                            onClick={togglePopup}
+                            onClick={goToExtraPaymentPage}
                         ></input>
-                        {isOpen && (
-                            <Popup
-                                content={
-                                    <>
-                                        <b>Design your Popup</b>
-                                        <p>hola</p>
-                                    </>
-                                }
-                                handleClose={togglePopup}
-                            />
-                        )}
                     </div>
 
                     <div>
@@ -67,19 +55,8 @@ export const Payment = () => {
                             id="Servicios de la comunidad"
                             value="Servicios de la comunidad"
                             className={styles.paymentsOptions}
-                            onClick={togglePopup}
+                            onClick={goToCommunityGeneralPaymentPage}
                         ></input>
-                        {isOpen && (
-                            <Popup
-                                content={
-                                    <>
-                                        <b>Design your Popup</b>
-                                        <p>hola</p>
-                                    </>
-                                }
-                                handleClose={togglePopup}
-                            />
-                        )}
                     </div>
                 </div>
             </div>

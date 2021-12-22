@@ -40,6 +40,10 @@ export const SignUp = () => {
         setuserRegistration({ name: '', email: '', phone: '', password: '' })
     }
 
+    const goToChooseRol = () => {
+        window.location = '/sign-in'
+    }
+
     return (
         <div className={styles.containerPrincipal}>
             <div className={styles.containerLogin}>
@@ -91,6 +95,10 @@ export const SignUp = () => {
                         />
 
                         <Button className="registerBtn" onClick={handleSubmit}>
+                            Confirmar datos de registro
+                        </Button>
+
+                        <Button className="registerBtn" onClick={goToChooseRol}>
                             Registrarse
                         </Button>
                     </div>

@@ -25,6 +25,10 @@ export const SignIn = () => {
         setuserSignIn({ ...userSignIn, [name]: value })
     }
 
+    const goToChooseRol = () => {
+        window.location = '/choose-rol'
+    }
+
     const handleSubmit = async (e) => {
         e.preventDefault()
 
@@ -75,6 +79,9 @@ export const SignIn = () => {
                         />
 
                         <Button className="registerBtn" onClick={handleSubmit}>
+                            Confirmar datos de acceso
+                        </Button>
+                        <Button className="registerBtn" onClick={goToChooseRol}>
                             Acceder a mi cuenta
                         </Button>
                     </div>
