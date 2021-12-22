@@ -78,14 +78,14 @@
 }
 
 .blockLeftContainer{
-    height: 800px;
-    width: 1500px;
-    border: 1px solid grey;
-    background-color: grey;
+    width: 50%;
+    height: 60%;
     display: flex;
     flex-direction: column;
-    align-items: left;
-    justify-content: left;
+    align-items: center;
+    justify-content: center;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2, 0, 36, 0.356) 0%, rgba(74, 84, 126, 0.26) 35%, rgba(37,69,130,1) 96%);
 
 }
 

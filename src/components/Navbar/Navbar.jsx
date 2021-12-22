@@ -85,6 +85,9 @@ export const Navbar = () => {
                         <Link className="links" to="/payments">
                             Pagos
                         </Link>
+                        <Link className="links" to="/create-payments">
+                            Crear pagos
+                        </Link>
                         <Link className="links" to="/generate-invitation">
                             Generar código
                         </Link>

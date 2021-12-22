@@ -18,8 +18,7 @@ export const Invite = () => {
 
     return  <div className={styles.container}>
                 <div className={styles.blockLeft}>
-                    <p className={styles.holaPresidente}>¡Hola, presidente!</p>
-                    <Icon className={styles.iconHouse} icon="noto:house-with-garden" />
+                    
                 </div>
                 <div className={styles.blockMid}>
                     <div className={styles.blockMidTop}>
@@ -28,9 +27,7 @@ export const Invite = () => {
                     </div>
                     <div className={styles.blockMidBottom}>
             
-                    <Icon className={styles.userIcon} icon="carbon:user-avatar" color="#ffffff" />
-                    <p className={styles.middleParagraph}>Matthew Blake</p>
-                    <p className={styles.middleParagraph}>Matt-Bk@gmail.com</p>
+                
                     
                     <p className={styles.middleParagraph}>¿Has añadido ya a todos los miembros de tu comunidad?</p>
                     <p className={styles.middleParagraph}>¡Genera una nueva invitación aquí!</p>

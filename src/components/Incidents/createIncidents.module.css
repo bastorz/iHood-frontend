@@ -116,5 +116,11 @@ gap: 40px;
 .titulo{
     color: #ffffff;
     font-family: 'Raleway', sans-serif;
+    margin-bottom: 50px;
+}
+
+.titulo2{
+    color: #ffffff;
+    font-family: 'Raleway', sans-serif;
 
 }

@@ -1,9 +1,9 @@
 import { React, useState } from 'react'
 import { Icon } from '@iconify/react'
-import styles from './CreateNotification.module.css'
+import styles from './CreatePayment.module.css'
 import { NotificationService } from '../../services/notification.service'
 
-export const CreateNotification = () => {
+export const CreatePayment = () => {
     const [createNotification, setCreateNotification] = useState({
         title: '',
         description: '',
@@ -48,6 +48,15 @@ export const CreateNotification = () => {
                             placeholder="titulo ..."
                             onChange={handleInput}
                         ></input>
+                        <h3 className={styles.titulo2}>Tipo de pago</h3>
+                        <select
+                            className={styles.inputTitle}
+                            name="Tipo de pagos"
+                        >
+                            <option value="1">Pago mensual</option>
+                            <option value="2">Pagos extra</option>
+                            <option value="3">Servicios de la comunidad</option>
+                        </select>
                         <h3 className={styles.titulo2}>Descripción</h3>
                         <input
                             name="description"

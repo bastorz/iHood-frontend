@@ -22,7 +22,7 @@ import { ExtraPayment } from './components/Payments/ExtraPayments'
 import { MasterProfile } from './components/MasterProfile/MasterProfile'
 import { CheckIncidents } from './components/Incidents/CheckIncidents'
 import { CheckNotification } from './components/Notifications/CheckNotification'
-import { LoginPresidente } from './components/login/LoginPresidente'
+import { CreatePayment } from './components/Payments/CreatePayment'
 
 function App() {
     return (
@@ -102,6 +102,10 @@ function App() {
                         <Route
                             path="/extra-payments"
                             element={<ExtraPayment />}
+                        />
+                        <Route
+                            path="/create-payments"
+                            element={<CreatePayment />}
                         />
                     </Routes>
 
